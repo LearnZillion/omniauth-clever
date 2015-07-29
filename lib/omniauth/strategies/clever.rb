@@ -17,6 +17,7 @@ module OmniAuth
           params[:scope] = 'read_only'
           params[:clever_landing] = options.client_options.fetch(:clever_landing, 'admin')
           params[:district_id] = request.params[:district_id] unless request.params[:district_id].nil?
+          puts "#{params}"
         end
       end
 
